@@ -1,3 +1,5 @@
+package snapshot;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,7 +26,7 @@ public class FileSnapshot {
 
   @Override
   public String toString() {
-    return "FileSnapshot{" +
+    return "snapshot.FileSnapshot{" +
         "fileName='" + fileName + '\'' +
         ", lines=" + lines +
         '}';

@@ -1,3 +1,8 @@
+package diff;
+
+import snapshot.FileSnapshot;
+import version.Commit;
+
 import java.util.List;
 
 public class SimpleDiffEngine implements DiffEngine {

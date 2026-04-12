@@ -1,3 +1,7 @@
+package version;
+
+import snapshot.FileSnapshot;
+
 public class Commit {
   private String id;
   private String message;
