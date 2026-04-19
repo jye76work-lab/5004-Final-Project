@@ -1,12 +1,22 @@
 package diff;
 
+import java.util.List;
 import snapshot.FileSnapshot;
 import version.Commit;
 
-import java.util.List;
-
+/**
+ * A simple implementation of DiffEngine.
+ * Performs line-by-line comparison between two commits.
+ */
 public class SimpleDiffEngine implements DiffEngine {
 
+  /**
+   * Compares two commits line by line and identifies differences.
+   *
+   * @param c1 the first commit (older version)
+   * @param c2 the second commit (newer version)
+   * @return a DiffResult containing the differences
+   */
   @Override
   public DiffResult compare(Commit c1, Commit c2) {
     DiffResult result = new DiffResult();
